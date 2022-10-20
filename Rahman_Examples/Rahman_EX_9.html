@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+      class Input extends React.Component {
+        constructor(props) {
+          super(props)
+          this.state = {
+            value: 'Show text rahman is writhing !'
+          }
+          this.handleChange = this.handleChange.bind(this)
+        }
+        handleChange(event) {
+          this.setState({ value: event.target.value });
+        }
+        render() {
+          var value = this.state.value;
+          return (
+            <div>
+              <input type="text" value={value} onChange={this.handleChange} />
+              <p>{value}</p>
+            </div>
+          );
+        }
+      }
+        
+      ReactDOM.render(<Input/>, document.getElementById('Rahman_example'));
+    </script>
+  </body>
+</html>

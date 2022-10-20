@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+      var arr = [
+        <h1 key="1">Rahman :  Hello world!</h1>,
+        <h2 key="2">Rahman :  React is awesome</h2>,
+      ];
+      ReactDOM.render(
+        <div>{arr}</div>,
+        document.getElementById('Rahman_example')
+      );
+    </script>
+  </body>
+</html>

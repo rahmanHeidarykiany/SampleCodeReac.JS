@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+      class HelloMessage extends React.Component {
+        render() {
+          return <h1>Hello Rahman and {this.props.name}</h1>;
+        }
+      }
+
+      ReactDOM.render(
+        <HelloMessage name="John" />,
+        document.getElementById('Rahman_example')
+      );
+    </script>
+  </body>
+</html>

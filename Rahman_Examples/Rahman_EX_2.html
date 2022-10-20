@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+      var names = ['Alice', 'Emily', 'Kate'];
+
+      ReactDOM.render(
+        <div>
+        {
+          names.map(function (name, index) {
+            return <div key={index}>Rahman : Hello, {name}!</div>
+          })
+        }
+        </div>,
+        document.getElementById('Rahman_example')
+      );
+    </script>
+  </body>
+</html>

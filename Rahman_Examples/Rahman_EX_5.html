@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+      class NotesList extends React.Component {
+        render() {
+          return (
+            <ol>
+              {
+                React.Children.map(this.props.children, function (child) {
+                  return <li>{child}</li>;
+                })
+              }
+            </ol>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <NotesList>
+          <span>Rahman: hello</span>
+          <span>world</span>
+        </NotesList>,
+        document.getElementById('Rahman_example')
+      );
+    </script>
+  </body>
+</html>
+

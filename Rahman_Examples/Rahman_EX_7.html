@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+      class MyComponent extends React.Component {
+        constructor(props) {
+          super(props);
+          this.myTextInput = React.createRef();
+          this.handleClick = this.handleClick.bind(this)
+        }
+        handleClick() {
+          this.myTextInput.current.focus();
+        }
+        render() {
+          return (
+            <div>
+              <input type="text" ref={this.myTextInput} />
+              <input type="button" value="Input text " onClick={this.handleClick} />
+            </div>
+          );
+        }
+      }
+
+      ReactDOM.render(
+        <MyComponent />,
+        document.getElementById('Rahman_example')
+      );
+    </script>
+  </body>
+</html>

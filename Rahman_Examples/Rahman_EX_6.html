@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <script src="../Rahman_build/react.development.js"></script>
+    <script src="../Rahman_build/react-dom.development.js"></script>
+    <script src="../Rahman_build/babel.min.js"></script>
+    <script src="../Rahman_build/prop-types.js"></script>
+  </head>
+  <body>
+    <div id="Rahman_example"></div>
+    <script type="text/babel">
+
+      var data = 1989 ;
+
+      class MyTitle extends React.Component {
+        static propTypes = {
+          title: PropTypes.string.isRequired,
+        }
+        render() {
+          return <h1> {this.props.title} </h1>;
+        }
+      }
+
+      ReactDOM.render(
+        <MyTitle title={data} />,
+        document.getElementById('Rahman_example')
+      );
+
+    </script>
+  </body>
+</html>
+
