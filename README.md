@@ -4,10 +4,8 @@
 
 These examples are purposely written in a simple style. 
 ## How to use
-First download files, there should be 3 files, "Rahman_build", "Rahman_Examples", "README.md"
-First go in "Rahman_Examples" files
-Then play with the source files.
-
+First download repository, there should be 3 files, "Rahman_build", "Rahman_Examples", "README.md"
+Examples are in "Rahman_Examples" files.
 
 
 ## Rahman_EX_2: Use JavaScript in JSX
