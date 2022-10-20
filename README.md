@@ -1,6 +1,6 @@
 # SampleCodeReac.JS
  I made some code samples of React.js. These examples are purposely written in a simple style.
-Some simple examples of React.js.
+
 
 These examples are purposely written in a simple style. 
 ## How to use
@@ -8,18 +8,6 @@ First download files, there should be 3 files, "Rahman_build", "Rahman_Examples"
 First go in "Rahman_Examples" files
 Then play with the source files.
 
-## Index
-. [Use JavaScript in JSX](#Rahman_EX_2.)
-. [Use array in JSX](#Rahman_EX_3.)
-. [Define a component](#Rahman_EX_4.)
-. [this.props.children]#Rahman_EX_5.)
-. [PropTypes](#Rahman_EX_6.)
-. [Finding a DOM node](#Rahman_EX_7.))
-. [this.state](#Rahman_EX_8.))
-. [Form](#Rahman_EX_9.)
-. [Component Lifecycle](#Rahman_EX_10.)
-. [Ajax](#Rahman_EX_11.)
-. [Display value from a Promise](#Rahman_EX_12.)
 
 
 ## Rahman_EX_2: Use JavaScript in JSX
